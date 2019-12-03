@@ -1,0 +1,8 @@
+Type: IPython Notebook Extension
+Name: Font
+Description: Enable to change the font of selected text and/or entire markdown cells.
+Link: readme.md
+Icon: icon.png
+Main: font.js
+Compatibility: 3.x, 4.x, 5.x
+

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+.mark {
+    background-color: yellow;
+    color: red;
+    display:inline-block;
+}
+
+.burk {
+    background-color: red;
+    color: yellow;
+    display:inline-block;
+}
+
+.girk {
+    background-color: lime;
+    color: red;
+    display:inline-block;
+}
+
+.ariel {
+    font-family:OCR A Std, monospace;
+    display:inline-block;
+}
+
+.times {
+    font-family:'Times New Roman', Times, serif;
+    display:inline-block;
+}
+.impact {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display:inline-block;
+}
+
+.google{
+    font-family: 'Bebas Neue', cursive;
+    display:inline-block;
+}
+#arielButton {
+    font-family: 'Bebas Neue', cursive;
+}
+
+#timesButton {
+    font-family:'Times New Roman', Times, serif;
+}
+
+#impactButton {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#googleButton{
+    font-family: 'Bebas Neue', cursive;
+}
