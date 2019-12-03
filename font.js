@@ -5,8 +5,9 @@ a span tag with a given class and the selected text as data.
 if no text is selected, then the whole cell is highlighted (using a div tag and a class corresponding to the chosen scheme). A function to remove all csustom font is also provided. 
 */
 
+//this needs to be modified after each font is added (modify here for new font)
 function removeFullCellFont(cell_text) {
-    cell_text = cell_text.replace(/<div class=(?:"arielButton"|"timesButton"|"impactButton")>\n([\s\S]*?)<\/div>/g, function(w, g) {
+    cell_text = cell_text.replace(/<div class=(?:"ariel"|"times"|"impact"|"bebas"|"pacifico"|"righteous"|"bowbly")>\n([\s\S]*?)<\/div>/g, function(w, g) {
         return g
     })
     return cell_text
@@ -151,7 +152,7 @@ function align(tofind, text) {
 
 
 // ***************** Keyboard shortcuts ******************************
-
+//do this for three most popular fonts
 var add_cmd_shortcuts = {
     'Alt-g': {
         help: 'highlight selected text',
@@ -211,7 +212,8 @@ function highlightText(scheme) {
     }
 }
 
-//create the toolbar extension           
+//create the toolbar extension 
+//modify here for new font          
 function build_toolbar () {
 var test = ' <div id="hgl" class="btn-group" role="toolbar"> \
 <div class="dropdown">\
@@ -222,7 +224,11 @@ var test = ' <div id="hgl" class="btn-group" role="toolbar"> \
     <a class="dropdown-item" id="arielButton" href="#">Ariel</a>\
     <a class="dropdown-item" id="timesButton" href="#">TimesNewRoman</a>\
     <a class="dropdown-item" id="impactButton" href="#">Impact</a>\
-    <a class="dropdown-item" id="remove_font" href="#">Default</a>\
+    <a class="dropdown-item" id="bebasButton" href="#">Bebas Neue</a>\
+    <a class="dropdown-item" id="pacificoButton" href="#">Pacifico</a>\
+    <a class="dropdown-item" id="righteousButton" href="#">Righteous</a>\
+    <a class="dropdown-item" id="bowblyButton" href="#">Bowlby One</a>\
+    <a class="dropdown-item" id="removeFontButton" href="#">Default</a>\
   </div>\
 </div>\
 </div>'             
@@ -233,7 +239,6 @@ $("#test").css({
     'padding': '5px'
 });
 
-
 //Actions
 $("#font_menu").attr('title', 'Change font of selected text');
 
@@ -243,30 +248,38 @@ $("#arielButton")
         highlightText("ariel");
     })
 
-$("#b2")
+$("#timesButton")
     .on('click', function() {
-        highlightText("mark")
+        highlightText("times");
     })
-     .on('mouseover', function() {
-    $("#b2").removeClass("btn btn-default").addClass("btn mark")
-}) //!!
-    .on('mouseout', function() {
-       $("#b2").addClass("btn btn-default")
-})  
 
-$("#b3")
+$("#impactButton")
     .on('click', function() {
-        highlightText("girk")
+        highlightText("impact");
     })
-     .on('mouseover', function() {
-       $(this).removeClass("btn btn-default").addClass("btn girk")
-}) //!!
-    .on('mouseout', function() {
-       $(this).addClass("btn btn-default")
-})  
+
+$("#bebasButton")
+    .on('click', function() {
+        highlightText("bebas");
+    })
+
+$("#pacificoButton")
+    .on('click', function() {
+        highlightText("pacifico");
+    })
+
+$("#righteousButton")
+    .on('click', function() {
+        highlightText("righteous");
+    })
+    
+$("#bowblyButton")
+    .on('click', function() {
+        highlightText("bowbly");
+    })
 
 
-$("#remove_highlights")
+$("#removeFontButton")
     .on('click', function() {
         removeFont()
     })
@@ -298,8 +311,8 @@ define(["require",
             return
         }
 
-        console.log("[highlighter] Loading highlighter.css");
-        load_css('./highlighter.css')
+        console.log("[font] Loading font.css");
+        load_css('./font.css')
 
         IPython.keyboard_manager.edit_shortcuts.add_shortcuts(add_edit_shortcuts);
         IPython.keyboard_manager.command_shortcuts.add_shortcuts(add_cmd_shortcuts);
