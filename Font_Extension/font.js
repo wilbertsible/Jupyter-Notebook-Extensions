@@ -7,7 +7,7 @@ if no text is selected, then the whole cell is highlighted (using a div tag and 
 
 //this needs to be modified after each font is added (modify here for new font)
 function removeFullCellFont(cell_text) {
-    cell_text = cell_text.replace(/<div class=(?:"ariel"|"times"|"impact"|"bebas"|"pacifico"|"righteous"|"bowbly")>\n([\s\S]*?)<\/div>/g, function(w, g) {
+    cell_text = cell_text.replace(/<div class=(?:"ariel"|"times"|"impact"|"bebas"|"pacifico"|"righteous"|"bowbly"|"robotoblack"|"indie"|"josefin"|"ibarra"|"shadows")>\n([\s\S]*?)<\/div>/g, function(w, g) {
         return g
     })
     return cell_text
@@ -228,6 +228,11 @@ var test = ' <div id="hgl" class="btn-group" role="toolbar"> \
     <a class="dropdown-item" id="pacificoButton" href="#">Pacifico</a>\
     <a class="dropdown-item" id="righteousButton" href="#">Righteous</a>\
     <a class="dropdown-item" id="bowblyButton" href="#">Bowlby One</a>\
+    <a class="dropdown-item" id="robotoblackButton" href="#">Roboto</a>\
+    <a class="dropdown-item" id="indieButton" href="#">Indie</a>\
+    <a class="dropdown-item" id="josefinButton" href="#">Josefin Sans</a>\
+    <a class="dropdown-item" id="ibarraButton" href="#">Ibarra Nova</a>\
+    <a class="dropdown-item" id="shadowsButton" href="#">Shadows</a>\
     <a class="dropdown-item" id="removeFontButton" href="#">Default</a>\
   </div>\
 </div>\
@@ -241,7 +246,6 @@ $("#test").css({
 
 //Actions
 $("#font_menu").attr('title', 'Change font of selected text');
-
 
 $("#arielButton")
     .on('click', function() {
@@ -278,6 +282,30 @@ $("#bowblyButton")
         highlightText("bowbly");
     })
 
+$("#robotoblackButton")
+.on('click', function() {
+    highlightText("robotoblack");
+})
+
+$("#indieButton")
+.on('click', function() {
+    highlightText("indie");
+})
+
+$("#josefinButton")
+.on('click', function() {
+    highlightText("josefin");
+})
+
+$("#shadowsButton")
+.on('click', function() {
+    highlightText("shadows");
+})
+
+$("#ibarraButton")
+.on('click', function() {
+    highlightText("ibarra");
+})
 
 $("#removeFontButton")
     .on('click', function() {
