@@ -4,7 +4,85 @@ font-family: 'Bebas Neue', cursive;
 font-family: 'Pacifico', cursive;
 font-family: 'Righteous', cursive;
 font-family: 'Bowlby One SC', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Ibarra Real Nova', serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Shadows Into Light', cursive;
 */
+
+
+
+
+@font-face {
+    font-family: 'shadows_into_lightregular';
+    src: url('../fonts/shadowsintolight-regular-webfont.woff2') format('woff2'),
+         url('../fonts/shadowsintolight-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotoblack';
+    src: url('../fonts/roboto-black-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'josefin_sansregular';
+    src: url('../fonts/josefinsans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/josefinsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'indie_flowerregular';
+    src: url('../fonts/indieflower-regular-webfont.woff2') format('woff2'),
+         url('../fonts/indieflower-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ibarra_real_novaregular';
+    src: url('../fonts/ibarrarealnova-regular-webfont.woff2') format('woff2'),
+         url('../fonts/ibarrarealnova-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.robotoblack {
+    font-family: 'robotoblack', sans-serif; 
+    display:inline-block;  
+}
+
+
+.josefin{
+    font-family: 'josefin_sansregular', sans-serif;
+    display:inline-block;
+}
+
+.ibarra{
+    font-family: 'ibarra_real_novaregular', serif;
+    /*font-size: xx-large;*/
+    display:inline-block;
+}
+
+.indie{
+    font-family: 'indie_flowerregular', cursive;
+    display:inline-block;
+}
+
+.shadows{
+    font-family: 'shadows_into_lightregular', cursive;
+    display:inline-block;
+}
 
 .ariel {
     font-family:Arial, Helvetica, sans-serif;
@@ -40,6 +118,34 @@ font-family: 'Bowlby One SC', cursive;
     font-family: 'Bowlby One SC', cursive;
     display:inline-block;
 }
+
+
+#robotoblackButton {
+    font-family: 'robotoblack', sans-serif; 
+    display:block;  
+}
+
+#josefinButton{
+    font-family: 'josefin_sansregular', sans-serif;
+    display:block;
+}
+
+#ibarraButton{
+    font-family: 'ibarra_real_novaregular', serif;
+    display:block;
+}
+
+#indieButton{
+    font-family: 'indie_flowerregular', cursive;
+    display:block;
+}
+
+#shadowsButton{
+    font-family: 'shadows_into_lightregular', cursive;
+    display:block;
+}
+
+
 #arielButton {
     font-family: 'Bebas Neue', cursive;
     display:block;
@@ -70,3 +176,4 @@ font-family: 'Bowlby One SC', cursive;
     font-family: 'Bowlby One SC', cursive;
     display:block;
 }
+
