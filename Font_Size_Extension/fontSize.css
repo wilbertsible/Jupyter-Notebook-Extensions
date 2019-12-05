@@ -1,0 +1,145 @@
+/*classes and buttons for the various font sizes*/
+
+.font8{
+    font-size:11px;
+    display:inline-block; 
+}
+
+.font10
+{
+    font-size:13px;
+    display:inline-block; 
+}
+
+.font12
+{
+    font-size:16px;
+    display:inline-block; 
+}
+
+.font14
+{
+    font-size:19px;
+    display:inline-block; 
+}
+
+.font16
+{
+    font-size:22px;
+    display:inline-block; 
+}
+.font18
+{
+    font-size:24px;
+    display:inline-block; 
+}
+.font20
+{
+    font-size:26px;
+    display:inline-block; 
+}
+.font22
+{
+    font-size:29px;
+    display:inline-block; 
+}
+
+.font24{
+    font-size:32px;
+    display:inline-block;
+}
+
+.font26{
+    font-size:35px;
+    display:inline-block;
+}
+
+.font28{
+    font-size:37px;
+    display:inline-block;
+}
+.font30{
+    font-size:40px;
+    display:inline-block;
+}
+.font32{
+    font-size:42px;
+    display:inline-block;
+}
+.font34{
+    font-size:45px;
+    display:inline-block;
+}
+
+#font8Button {
+  
+    display:block;
+}
+
+#font10Button {
+  
+    display:block;
+}
+
+#font12Button {
+  
+    display:block;
+}
+
+#font14Button {
+  
+    display:block;
+}
+
+#font16Button {
+  
+    display:block;
+}
+
+#font18Button {
+  
+    display:block;
+}
+
+#font20Button {
+  
+    display:block;
+}
+#font22Button {
+  
+    display:block;
+}
+
+#font24Button {
+    display:block;
+}
+
+#font26Button 
+{
+    display:block;
+}
+
+#font28Button 
+{
+    display:block;
+}
+
+#font30Button {
+    display:block;
+}
+
+#font32Button {
+    display:block;
+}
+
+#font34Button {
+    display:block;
+}
+
+
+
+
+
+
+
+
