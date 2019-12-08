@@ -314,5 +314,5 @@ define(["require",
     };
 }); //End of main function
 
-console.log("Loading ./fontSize.js");
+console.log("Loading ./highlighter.js");
 
