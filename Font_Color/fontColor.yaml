@@ -1,0 +1,8 @@
+Type: IPython Notebook Extension
+Name: Font_Color
+Description: Enable to change the color of selected text and/or entire markdown cells.
+Link: readme.md
+Icon: icon.png
+Main: fontColor.js
+Compatibility: 3.x, 4.x, 5.x
+

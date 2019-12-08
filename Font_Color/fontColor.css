@@ -1,0 +1,123 @@
+.red {
+    color: rgb(255, 0, 0); 
+    display:inline-block;  
+}
+
+
+.redOrange{
+    color: rgb(255, 64, 0); 
+    display:inline-block;  
+}
+
+.orange{
+    color: rgb(255, 128, 0); 
+    display:inline-block;  
+}
+
+.yelowOrange{
+    color: rgb(255, 191, 0); 
+    display:inline-block;  
+}
+
+.yellow{
+    color: rgb(255, 255, 0); 
+    display:inline-block;  
+}
+.yellowGreen{
+    color: rgb(154,205,50); 
+    display:inline-block;  
+}
+
+.green{
+    color: rgb(128, 255, 0); 
+    display:inline-block;  
+}
+.blueGreen{
+    color: rgb(13, 152, 186); 
+    display:inline-block;  
+}
+
+.blue{
+    color: rgb(0,0,255); 
+    display:inline-block;  
+}
+.blueViolet{
+    color: rgb(138,43,226); 
+    display:inline-block;  
+}
+
+.violet{
+    color: rgb(238,130,238); 
+    display:inline-block;  
+}
+
+.redViolet{
+    color: rgb(199, 21, 133); 
+    display:inline-block;  
+}
+.black{
+    color: rgb(0, 0, 0); 
+    display:inline-block;  
+}
+
+
+#redButton {
+    color: rgb(255, 0, 0); 
+    display:block;  
+}
+
+#redOrangeButton{
+    color: rgb(255, 64, 0); 
+    display:block;
+}
+
+#orangeButton{
+    color: rgb(255, 128, 0); 
+    display:block;
+}
+
+#yellowOrangeButton{
+    color: rgb(255, 191, 0); 
+    display:block;
+}
+
+#yellowButton{
+    color: rgb(255, 255, 0); 
+    display:block;
+}
+
+
+#yellowGreenButton {
+    color: rgb(154,205,50); 
+    display:block;
+}
+
+#greenButton {
+    color: rgb(128, 255, 0); 
+    display:block;
+}
+
+#blueGreenButton {
+    color: rgb(13, 152, 186); 
+    display:block;
+}
+#blueButton {
+    color: rgb(0,0,255); 
+    display:block;
+}
+#blueVioletButton {
+    color: rgb(138,43,226); 
+    display:block;
+}
+#violetButton {
+    color: rgb(238,130,238); 
+    display:block;
+}
+#redVioletButton {
+    color: rgb(199, 21, 133); 
+    display:block;
+}
+#blackButton {
+    color: rgb(0, 0, 0); 
+    display:block;
+}
