@@ -289,7 +289,7 @@ define(["require",
         }
 
         console.log("[font] Loading font.css");
-        load_css('./font.css')
+        load_css('./fontSize.css')
 
         
         build_toolbar();
