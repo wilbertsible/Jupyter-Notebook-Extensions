@@ -157,7 +157,7 @@ function build_toolbar () {
 var test = ' <div id="hgl" class="btn-group" role="toolbar"> \
 <div class="dropdown">\
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">\
-    <i class="fa fa-font"></i> <i id="menu-hgl" class="fa fa-caret-down"></i>  </button>\
+    <i class="fa fa-paint-brush"></i> <i id="menu-hgl" class="fa fa-caret-down"></i>  </button>\
   </button>\
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="font-size:20px">\
     <a class="dropdown-item" id="redButton" href="#">Text</a>\
