@@ -58,7 +58,7 @@ font-family: 'Shadows Into Light', cursive;
 
 
 .robotoblack {
-    color: rgb(255, 0, 0); 
+    font-family: 'robotoblack', sans-serif; 
     display:inline-block;  
 }
 
