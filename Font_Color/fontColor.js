@@ -5,8 +5,16 @@ a span tag with a given class and the selected text as data.
 if no text is selected, then the whole cell is highlighted (using a div tag and a class corresponding to the chosen scheme). A function to remove all csustom font is also provided. 
 */
 
+function removeFullCellColor(cell_text) {
+    cell_text = cell_text.replace(/<div class=(?:"red"|"redOrange"|"orange"|"yellowOrange"|"yellow"|"yellowGreen"|"green"|"blueGreen"|"blue"|"blueViolet"|"violet"|"redViolet"|"black")>\n([\s\S]*?)<\/div>/g, function(w, g) {
+        return g
+    })
+    return cell_text
+}
+
 
 function fullCellColor(cell_text,scheme) {
+    cell_text=removeFullCellColor(cell_text);
     return '<div class='+'"'+scheme+'"'+'>\n'+cell_text+'</div>'
 }
 

@@ -3,10 +3,16 @@ Sizes are defined in the fontSize.css
 This code is used to change the size of the selected text to the menu option selected 
 */
 
+function removeFullCellSize(cell_text) {
+    cell_text = cell_text.replace(/<div class=(?:"font8"|"font10"|"font12"|"font14"|"font16"|"font18"|"font20"|"font22"|"font24"|"font26"|"font28"|"font30"|"font32"|"font34")>\n([\s\S]*?)<\/div>/g, function(w, g) {
+        return g
+    })
+    return cell_text
+}
 
 
 function fullCellSize(cell_text,scheme) {
-    
+    cell_text=removeFullCellSize(cell_text);
     return '<div class='+'"'+scheme+'"'+'>\n'+cell_text+'</div>'
 }
 
