@@ -245,7 +245,7 @@ $("#test").css({
 });
 
 //Actions
-$/*("#font_menu").attr('title', 'Change font of selected text');*/
+$("#font_menu").attr('title', 'Change font of selected text');
 
 $("#arielButton")
     .on('click', function() {
