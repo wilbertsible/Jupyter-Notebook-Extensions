@@ -191,8 +191,8 @@ $("#test").css({
     'padding': '5px'
 });
 
-//Actions
-/*$("#font_menu").attr('title', 'Change color of selected text');*/
+//Action
+$("#font_menu").attr('title', 'Change color of selected text');
 
 $("#redButton")
     .on('click', function() {
@@ -258,15 +258,7 @@ $("#blackButton")
     .on('click', function() {
         colorText("black");
     })
-
-
-    Jupyter.toolbar.add_buttons_group([
-        Jupyter.keyboard_manager.actions.register ({
-            help   : 'Create/Edit Gist of Notebook',
-            icon   : 'fa-github',
-            handler: show_gist_editor_modal
-        }, 'create-gist-from-notebook', 'gist_it')
-    ]);
+    
 } // end build_toolbar
 
 
