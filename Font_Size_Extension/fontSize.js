@@ -159,7 +159,7 @@ function changeTextSize(scheme) {
 
 //create the toolbar extension 
 //modify here for new font          
-function build_toolbar () {
+function build_toolbar_fontSize () {
 var test = ' <div id="hgl" class="btn-group" role="toolbar"> \
 <div class="dropdown">\
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">\
@@ -266,7 +266,6 @@ $("#font34Button")
         changeTextSize("font34");
     })
 
-
 } // end build_toolbar
 
 //******************************* MAIN FUNCTION **************************
@@ -294,11 +293,11 @@ define(["require",
             return
         }
 
-        console.log("[font] Loading font.css");
+        console.log("[font] Loading fontSize.css");
         load_css('./fontSize.css')
 
         
-        build_toolbar();
+        build_toolbar_fontSize();
 
         var _on_reload = true; /* make sure cells render on reload */
 
@@ -309,7 +308,7 @@ define(["require",
         $([Jupyter.events]).on('status_started.Kernel', function() {
 
             //highlighter_init_cells();
-            console.log("[highlighter] reload...");
+            console.log("[fontSize] reload...");
             _on_reload = false;
         })
 
@@ -320,5 +319,5 @@ define(["require",
     };
 }); //End of main function
 
-console.log("Loading ./highlighter.js");
+console.log("Loading ./fontSize.js");
 

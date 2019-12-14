@@ -198,7 +198,7 @@ var add_edit_shortcuts = {
 //******Toolbar buttons *************************************************
 
 //check for code cells. We do not modify the font of code cells
-function highlightText(scheme) {
+function fontStyle(scheme) {
     var cell = IPython.notebook.get_selected_cell();
     var cellType = cell.cell_type;
     if (cellType != "code")
@@ -214,7 +214,7 @@ function highlightText(scheme) {
 
 //create the toolbar extension 
 //modify here for new font          
-function build_toolbar () {
+function build_toolbar_fontStyle() {
 var test = ' <div id="hgl" class="btn-group" role="toolbar"> \
 <div class="dropdown">\
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">\
@@ -245,66 +245,66 @@ $("#test").css({
 });
 
 //Actions
-$("#font_menu").attr('title', 'Change font of selected text');
+$/*("#font_menu").attr('title', 'Change font of selected text');*/
 
 $("#arielButton")
     .on('click', function() {
-        highlightText("ariel");
+        fontStyle("ariel");
     })
 
 $("#timesButton")
     .on('click', function() {
-        highlightText("times");
+        fontStyle("times");
     })
 
 $("#impactButton")
     .on('click', function() {
-        highlightText("impact");
+        fontStyle("impact");
     })
 
 $("#bebasButton")
     .on('click', function() {
-        highlightText("bebas");
+        fontStyle("bebas");
     })
 
 $("#pacificoButton")
     .on('click', function() {
-        highlightText("pacifico");
+        fontStyle("pacifico");
     })
 
 $("#righteousButton")
     .on('click', function() {
-        highlightText("righteous");
+        fontStyle("righteous");
     })
     
 $("#bowblyButton")
     .on('click', function() {
-        highlightText("bowbly");
+        fontStyle("bowbly");
     })
 
 $("#robotoblackButton")
 .on('click', function() {
-    highlightText("robotoblack");
+    fontStyle("robotoblack");
 })
 
 $("#indieButton")
 .on('click', function() {
-    highlightText("indie");
+    fontStyle("indie");
 })
 
 $("#josefinButton")
 .on('click', function() {
-    highlightText("josefin");
+    fontStyle("josefin");
 })
 
 $("#shadowsButton")
 .on('click', function() {
-    highlightText("shadows");
+    fontStyle("shadows");
 })
 
 $("#ibarraButton")
 .on('click', function() {
-    highlightText("ibarra");
+    fontStyle("ibarra");
 })
 
 $("#removeFontButton")
@@ -312,6 +312,8 @@ $("#removeFontButton")
         removeFont()
     })
     .attr('title', 'Remove highlightings in selected cell');
+
+
 } // end build_toolbar
 
 //******************************* MAIN FUNCTION **************************
@@ -345,7 +347,7 @@ define(["require",
         IPython.keyboard_manager.edit_shortcuts.add_shortcuts(add_edit_shortcuts);
         IPython.keyboard_manager.command_shortcuts.add_shortcuts(add_cmd_shortcuts);
 
-        build_toolbar();
+        build_toolbar_fontStyle();
 
         var _on_reload = true; /* make sure cells render on reload */
 
@@ -356,7 +358,7 @@ define(["require",
         $([Jupyter.events]).on('status_started.Kernel', function() {
 
             //highlighter_init_cells();
-            console.log("[highlighter] reload...");
+            console.log("[font] reload...");
             _on_reload = false;
         })
 
@@ -367,5 +369,5 @@ define(["require",
     };
 }); //End of main function
 
-console.log("Loading ./highlighter.js");
+console.log("Loading ./font.js");
 

@@ -161,7 +161,7 @@ function colorText(scheme) {
 
 //create the toolbar extension 
 //modify here for new font          
-function build_toolbar () {
+function build_toolbar_fontColor () {
 var test = ' <div id="hgl" class="btn-group" role="toolbar"> \
 <div class="dropdown">\
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">\
@@ -192,7 +192,7 @@ $("#test").css({
 });
 
 //Actions
-$("#font_menu").attr('title', 'Change color of selected text');
+/*$("#font_menu").attr('title', 'Change color of selected text');*/
 
 $("#redButton")
     .on('click', function() {
@@ -239,7 +239,7 @@ $("#blueButton")
     colorText("blue");
 })
 
-$("#blueViolet")
+$("#blueVioletButton")
 .on('click', function() {
     colorText("blueViolet");
 })
@@ -258,7 +258,17 @@ $("#blackButton")
     .on('click', function() {
         colorText("black");
     })
+
+
+    Jupyter.toolbar.add_buttons_group([
+        Jupyter.keyboard_manager.actions.register ({
+            help   : 'Create/Edit Gist of Notebook',
+            icon   : 'fa-github',
+            handler: show_gist_editor_modal
+        }, 'create-gist-from-notebook', 'gist_it')
+    ]);
 } // end build_toolbar
+
 
 //******************************* MAIN FUNCTION **************************
 
@@ -289,7 +299,7 @@ define(["require",
         load_css('./fontColor.css')
 
        
-        build_toolbar();
+        build_toolbar_fontColor();
 
         var _on_reload = true; /* make sure cells render on reload */
 
